@@ -16,14 +16,12 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import com.mongodb.flashcards.moodlogger.ui.theme.MoodLoggerTheme
 import com.mongodb.flashcards.moodlogger.viewmodels.MoodDialogViewModel
 
 @Composable
-fun MoodDialog(viewModel: MoodDialogViewModel) {
+fun MoodDialog(viewModel: MoodDialogViewModel, onShowChange: (Boolean) -> Unit) {
     Dialog(
         onDismissRequest = { /*TODO*/ }
     ) {
@@ -47,16 +45,22 @@ fun MoodDialog(viewModel: MoodDialogViewModel) {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    Button(
-                        onClick = { /*TODO*/ },
-                        // elevation = ButtonElevation.elevation(enabled = true, interactionSource = )
-                    ) {
+                    Button(onClick = {
+                        viewModel.onHappyButton()
+                        onShowChange(false)
+                    }) {
                         Text(text = "😃")
                     }
-                    Button(onClick = { /*TODO*/ }) {
+                    Button(onClick = {
+                        viewModel.onNeutralButton()
+                        onShowChange(false)
+                    }) {
                         Text(text = "😑")
                     }
-                    Button(onClick = { /*TODO*/ }) {
+                    Button(onClick = {
+                        viewModel.onSadButton()
+                        onShowChange(false)
+                    }) {
                         Text(text = "🙁")
                     }
                 }
@@ -65,10 +69,10 @@ fun MoodDialog(viewModel: MoodDialogViewModel) {
     }
 }
 
-@Preview
-@Composable
-fun MoodDialogPreview() {
-    MoodLoggerTheme {
-        MoodDialog(viewModel = MoodDialogViewModel())
-    }
-}
+// @Preview
+// @Composable
+// fun MoodDialogPreview() {
+//     MoodLoggerTheme {
+//         MoodDialog(viewModel = MoodDialogViewModel(), onShowChange = {})
+//     }
+// }

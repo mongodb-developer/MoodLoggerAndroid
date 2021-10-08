@@ -27,8 +27,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mongodb.flashcards.moodlogger.data.inmem.InMemRepository
-import com.mongodb.flashcards.moodlogger.model.Entry
-import com.mongodb.flashcards.moodlogger.model.Mood
+import com.mongodb.flashcards.moodlogger.domain.Entry
+import com.mongodb.flashcards.moodlogger.domain.Mood
 import com.mongodb.flashcards.moodlogger.ui.theme.MoodLoggerTheme
 import com.mongodb.flashcards.moodlogger.viewmodels.EntriesListViewModel
 import com.mongodb.flashcards.moodlogger.viewmodels.MoodDialogViewModel
@@ -54,7 +54,7 @@ fun EntriesListView(viewModel: EntriesListViewModel) {
     ) {
         EntriesList(viewModel = viewModel)
         if (showDialog) {
-            MoodDialog(viewModel = MoodDialogViewModel())
+            MoodDialog(viewModel = MoodDialogViewModel(viewModel.repository), onShowChange = { showDialog = it })
         }
     }
 }
