@@ -20,9 +20,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.mongodb.flashcards.moodlogger.ui.theme.MoodLoggerTheme
+import com.mongodb.flashcards.moodlogger.viewmodels.MoodDialogViewModel
 
 @Composable
-fun MoodDialog() {
+fun MoodDialog(viewModel: MoodDialogViewModel) {
     Dialog(
         onDismissRequest = { /*TODO*/ }
     ) {
@@ -68,6 +69,6 @@ fun MoodDialog() {
 @Composable
 fun MoodDialogPreview() {
     MoodLoggerTheme {
-        MoodDialog()
+        MoodDialog(viewModel = MoodDialogViewModel())
     }
 }
