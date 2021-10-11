@@ -17,7 +17,12 @@ class MainActivity : ComponentActivity() {
             MoodLoggerTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    EntriesListView(viewModel = EntriesListViewModel(InMemRepository()))
+                    if (FeatureFlags.REALM) {
+                        println("Faking it ATM")
+                        EntriesListView(viewModel = EntriesListViewModel(InMemRepository()))
+                    } else {
+                        EntriesListView(viewModel = EntriesListViewModel(InMemRepository()))
+                    }
                 }
             }
         }
