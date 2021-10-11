@@ -1,10 +1,10 @@
-package com.mongodb.flashcards.moodlogger.viewmodels
+package com.mongodb.moodlogger.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.mongodb.flashcards.moodlogger.data.Repository
-import com.mongodb.flashcards.moodlogger.data.RepositoryObserver
-import com.mongodb.flashcards.moodlogger.domain.Entry
+import com.mongodb.moodlogger.data.Repository
+import com.mongodb.moodlogger.data.RepositoryObserver
+import com.mongodb.moodlogger.domain.Entry
 
 class EntriesListViewModel(var repository: Repository<Entry>) : RepositoryObserver {
 

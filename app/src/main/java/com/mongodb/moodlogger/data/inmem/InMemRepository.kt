@@ -1,10 +1,10 @@
-package com.mongodb.flashcards.moodlogger.data.inmem
+package com.mongodb.moodlogger.data.inmem
 
-import com.mongodb.flashcards.moodlogger.data.Repository
-import com.mongodb.flashcards.moodlogger.data.RepositoryObserver
-import com.mongodb.flashcards.moodlogger.domain.Mood
+import com.mongodb.moodlogger.data.Repository
+import com.mongodb.moodlogger.data.RepositoryObserver
+import com.mongodb.moodlogger.domain.Mood
 import java.util.Date
-import com.mongodb.flashcards.moodlogger.domain.Entry as EntryModel
+import com.mongodb.moodlogger.domain.Entry as EntryModel
 
 class InMemRepository : Repository<EntryModel> {
     private var entries: ArrayList<Entry> = arrayListOf(

@@ -1,4 +1,4 @@
-package com.mongodb.flashcards.moodlogger.data
+package com.mongodb.moodlogger.data
 
 interface Repository<Entity> {
     fun getAll(completion: (Result<List<Entity>>) -> Unit)

@@ -1,4 +1,4 @@
-package com.mongodb.flashcards.moodlogger
+package com.mongodb.moodlogger
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

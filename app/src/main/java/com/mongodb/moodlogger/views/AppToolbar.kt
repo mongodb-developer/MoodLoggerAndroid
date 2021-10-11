@@ -1,4 +1,4 @@
-package com.mongodb.flashcards.moodlogger.views
+package com.mongodb.moodlogger.views
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material.MaterialTheme
@@ -9,7 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
-import com.mongodb.flashcards.moodlogger.ui.theme.MoodLoggerTheme
+import com.mongodb.moodlogger.ui.theme.MoodLoggerTheme
 
 @Composable
 fun AppToolbar(

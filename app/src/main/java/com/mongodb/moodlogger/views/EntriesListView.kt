@@ -1,4 +1,4 @@
-package com.mongodb.flashcards.moodlogger.views
+package com.mongodb.moodlogger.views
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -26,12 +26,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.mongodb.flashcards.moodlogger.data.inmem.InMemRepository
-import com.mongodb.flashcards.moodlogger.domain.Entry
-import com.mongodb.flashcards.moodlogger.domain.Mood
-import com.mongodb.flashcards.moodlogger.ui.theme.MoodLoggerTheme
-import com.mongodb.flashcards.moodlogger.viewmodels.EntriesListViewModel
-import com.mongodb.flashcards.moodlogger.viewmodels.MoodDialogViewModel
+import com.mongodb.moodlogger.data.inmem.InMemRepository
+import com.mongodb.moodlogger.domain.Entry
+import com.mongodb.moodlogger.domain.Mood
+import com.mongodb.moodlogger.ui.theme.MoodLoggerTheme
+import com.mongodb.moodlogger.viewmodels.EntriesListViewModel
+import com.mongodb.moodlogger.viewmodels.MoodDialogViewModel
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 

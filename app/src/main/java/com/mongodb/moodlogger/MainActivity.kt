@@ -1,14 +1,14 @@
-package com.mongodb.flashcards.moodlogger
+package com.mongodb.moodlogger
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import com.mongodb.flashcards.moodlogger.data.inmem.InMemRepository
-import com.mongodb.flashcards.moodlogger.ui.theme.MoodLoggerTheme
-import com.mongodb.flashcards.moodlogger.viewmodels.EntriesListViewModel
-import com.mongodb.flashcards.moodlogger.views.EntriesListView
+import com.mongodb.moodlogger.data.inmem.InMemRepository
+import com.mongodb.moodlogger.ui.theme.MoodLoggerTheme
+import com.mongodb.moodlogger.viewmodels.EntriesListViewModel
+import com.mongodb.moodlogger.views.EntriesListView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

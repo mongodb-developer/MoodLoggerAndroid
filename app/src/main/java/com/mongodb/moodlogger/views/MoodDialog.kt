@@ -1,4 +1,4 @@
-package com.mongodb.flashcards.moodlogger.views
+package com.mongodb.moodlogger.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,7 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import com.mongodb.flashcards.moodlogger.viewmodels.MoodDialogViewModel
+import com.mongodb.moodlogger.viewmodels.MoodDialogViewModel
 
 @Composable
 fun MoodDialog(viewModel: MoodDialogViewModel, onShowChange: (Boolean) -> Unit) {

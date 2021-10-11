@@ -1,8 +1,8 @@
-package com.mongodb.flashcards.moodlogger.viewmodels
+package com.mongodb.moodlogger.viewmodels
 
-import com.mongodb.flashcards.moodlogger.data.Repository
-import com.mongodb.flashcards.moodlogger.domain.Entry
-import com.mongodb.flashcards.moodlogger.domain.Mood
+import com.mongodb.moodlogger.data.Repository
+import com.mongodb.moodlogger.domain.Entry
+import com.mongodb.moodlogger.domain.Mood
 import java.util.Date
 
 class MoodDialogViewModel(private val repository: Repository<Entry>) {

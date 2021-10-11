@@ -1,4 +1,4 @@
-package com.mongodb.flashcards.moodlogger.ui.theme
+package com.mongodb.moodlogger.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

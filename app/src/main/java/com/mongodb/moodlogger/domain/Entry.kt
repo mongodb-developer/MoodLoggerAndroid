@@ -1,4 +1,4 @@
-package com.mongodb.flashcards.moodlogger.domain
+package com.mongodb.moodlogger.domain
 
 import java.util.Date
 
